@@ -46,7 +46,7 @@
                   height="500px"
                   width="300px"
                   style="border-radius: 50px"
-                  :src="movie.book_image"
+                  :src="'src/assets' + movie.book_image"
                   @click="setMovie(movie)"
                 >
                   <div
