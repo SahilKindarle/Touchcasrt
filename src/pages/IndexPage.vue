@@ -125,7 +125,7 @@ export default defineComponent({
   methods: {
     getMoviesData() {
       console.log("hello");
-      this.$axios.get("/src/assets/books.json").then((response) => {
+      this.$axios.get("src/assets/books.json").then((response) => {
         console.log(response.data.results.books);
         this.moviesData = response.data.results.books;
         this.singleMovieData = response.data.results.books[0];
